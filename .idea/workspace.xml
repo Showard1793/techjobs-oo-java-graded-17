@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59ff47a6-ece6-4e2e-b777-6247aa1f282e" name="Changes" comment="">
+    <list default="true" id="59ff47a6-ece6-4e2e-b777-6247aa1f282e" name="Changes" comment="Updated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/CoreCompetency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/CoreCompetency.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/PositionType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/PositionType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +62,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Showard1793/techjobs-oo-java-graded-17.git&quot;,
-    &quot;accountId&quot;: &quot;3dbeafad-1719-4ee7-b76e-5b45acd485c3&quot;
+    &quot;accountId&quot;: &quot;7b4a025e-38bf-4bf3-951e-73409bbd14a9&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -78,8 +76,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.Build techjobs-oo-java-graded-17.executor": "Run",
+    "Gradle.JobTest.testSettingJobId.executor": "Run",
     "Gradle.Tests in 'org.launchcode.techjobs.oo'.executor": "Run",
     "Gradle.techjobs-oo-java-graded-17 [:org.launchcode.techjobs.oo.Main.main()].executor": "Run",
+    "JUnit.JobTest.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -87,7 +88,7 @@
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.Tests in 'org.launchcode.techjobs.oo'">
+  <component name="RunManager" selected="Gradle.JobTest.testSettingJobId">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.launchcode.techjobs.oo.Main" />
       <module name="techjobs-oo-java17-graded.main" />
@@ -100,6 +101,30 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="JobTest.testSettingJobId" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.launchcode.techjobs.oo.JobTest.testSettingJobId&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
     </configuration>
     <configuration name="Tests in 'org.launchcode.techjobs.oo'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -125,8 +150,27 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="JobTest" type="JUnit" factoryName="JUnit">
+      <module name="techjobs-oo-java17-graded.test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="17" />
+      <option name="PACKAGE_NAME" value="org.launchcode.techjobs.oo" />
+      <option name="MAIN_CLASS_NAME" value="org.launchcode.techjobs.oo.JobTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Gradle.JobTest.testSettingJobId" />
+      <item itemvalue="Gradle.Tests in 'org.launchcode.techjobs.oo'" />
+      <item itemvalue="JUnit.JobTest" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.JobTest.testSettingJobId" />
         <item itemvalue="Gradle.Tests in 'org.launchcode.techjobs.oo'" />
         <item itemvalue="Application.Main" />
       </list>
@@ -141,6 +185,19 @@
       <option name="presentableId" value="Default" />
       <updated>1685977091317</updated>
     </task>
+    <task id="LOCAL-00001" summary="Updated">
+      <option name="closed" value="true" />
+      <created>1728605821692</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1728605821692</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated" />
   </component>
 </project>

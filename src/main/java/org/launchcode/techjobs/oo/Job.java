@@ -23,6 +23,7 @@ public class Job {
     // TODO: Add getters for each field EXCEPT nextId. Add setters for each field EXCEPT nextID
     //  and id.
 
+    //CONSTRUCTORS
         // Constructor to initialize a unique ID
         public Job() {
             this.id = nextId;
@@ -39,20 +40,46 @@ public class Job {
             this.coreCompetency = coreCompetency;
         }
 
+     //METHODS
         // Custom equals method
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
+            Job job = (Job) o;
+            return id == job.id;
+        }
+        //Custom hashCode method
+        @Override
+        public int hashCode() {
+            return Objects.hashCode(id);
+        }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Job job = (Job) o;
-        return id == job.id;
-    }
+        // toString method
+        @Override
+        public String toString() {
+            String output = System.lineSeparator();
 
-    @Override
-    public int hashCode() {
-        return Objects.hashCode(id);
-    }
+            // If the job only has an ID, return error message.
+            if ((name == null || name.isEmpty()) &&
+                    (employer == null || employer.getValue().isEmpty()) &&
+                    (location == null || location.getValue().isEmpty()) &&
+                    (positionType == null || positionType.getValue().isEmpty()) &&
+                    (coreCompetency == null || coreCompetency.getValue().isEmpty())) {
+                return "OOPS! This job does not seem to exist.";
+            }
+
+            // Adding field labels and values with formatting
+            output += "ID: " + id + System.lineSeparator();
+            output += "Name: " + (name == null || name.isEmpty() ? "Data not available" : name) + System.lineSeparator();
+            output += "Employer: " + (employer == null || employer.getValue().isEmpty() ? "Data not available" : employer.getValue()) + System.lineSeparator();
+            output += "Location: " + (location == null || location.getValue().isEmpty() ? "Data not available" : location.getValue()) + System.lineSeparator();
+            output += "Position Type: " + (positionType == null || positionType.getValue().isEmpty() ? "Data not available" : positionType.getValue()) + System.lineSeparator();
+            output += "Core Competency: " + (coreCompetency == null || coreCompetency.getValue().isEmpty() ? "Data not available" : coreCompetency.getValue()) + System.lineSeparator();
+
+            return output;
+        }
+
 
     // Getters
         public String getName() {

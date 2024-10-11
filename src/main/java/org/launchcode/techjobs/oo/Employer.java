@@ -8,11 +8,13 @@ public class Employer {
     private static int nextId = 1;
     private String value;
 
+    //Constructor to initialize ID
     public Employer() {
         id = nextId;
         nextId++;
     }
 
+    // Constructor to add ID and finish initializing the other fields
     public Employer(String value) {
         this();
         this.value = value;

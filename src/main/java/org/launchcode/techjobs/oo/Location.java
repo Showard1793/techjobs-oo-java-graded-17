@@ -4,10 +4,13 @@ import java.util.Objects;
 
 public class Location {
 
+    //Fields
     private int id;
     private static int nextId = 1;
     private String value;
 
+    //CONSTRUCTORS
+    // Constructor to initialize a unique ID
     public Location() {
         id = nextId;
         nextId++;
@@ -16,6 +19,11 @@ public class Location {
     // TODO: Add a constructor that takes a string as a parameter and assigns it to the 'value' field. The
     //  constructor should also call the empty constructor in order to initialize the 'id' field.
 
+    // Constructor to add ID and finish initializing the other fields
+    public Location(String value) {
+        this(); // Call the empty constructor
+        this.value = value; // Assign the provided value
+    }
 
     // Custom toString, equals, and hashCode methods:
 

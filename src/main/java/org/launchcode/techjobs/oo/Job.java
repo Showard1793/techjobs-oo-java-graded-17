@@ -58,6 +58,8 @@ public class Job {
         // toString method
         @Override
         public String toString() {
+
+           //Initializes output with a line separator at the start
             String output = System.lineSeparator();
 
             // If the job only has an ID, return error message.
@@ -69,7 +71,7 @@ public class Job {
                 return "OOPS! This job does not seem to exist.";
             }
 
-            // Adding field labels and values with formatting
+            // add all fields to output with correct formatting. Ternary to check if data is empty or null
             output += "ID: " + id + System.lineSeparator();
             output += "Name: " + (name == null || name.isEmpty() ? "Data not available" : name) + System.lineSeparator();
             output += "Employer: " + (employer == null || employer.getValue().isEmpty() ? "Data not available" : employer.getValue()) + System.lineSeparator();
